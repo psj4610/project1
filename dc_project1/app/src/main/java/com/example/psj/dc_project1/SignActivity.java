@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.github.gcacace.signaturepad.views.SignaturePad;
 
-public class MainActivity extends AppCompatActivity {
+public class SignActivity extends AppCompatActivity {
     SignaturePad signaturePad;
     Button saveButton, clearButton;
 
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //write code for saving the signature here
-                Toast.makeText(MainActivity.this, "Signature Saved", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignActivity.this, "Signature Saved", Toast.LENGTH_SHORT).show();
             }
         });
 
