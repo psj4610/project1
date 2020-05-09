@@ -1,11 +1,10 @@
 apply plugin: 'com.android.application'
 
-
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.psj.dc_project1"
-        minSdkVersion 23
+        applicationId "com.example.psj.project_0326"
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -20,11 +19,20 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:+'
+=======
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+>>>>>>> 89dff6fde389a98fefda7b7a6043149794ff29c9
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.gcacace:signature-pad:1.2.1'
+<<<<<<< HEAD
+=======
+    implementation 'com.android.support:support-v4:28.0.0'
+>>>>>>> 89dff6fde389a98fefda7b7a6043149794ff29c9
 }
