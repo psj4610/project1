@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".donateActivity"/>
+        <activity android:name=".SignActivity"/>
     </application>
 
 </manifest>
