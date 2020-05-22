@@ -29,14 +29,16 @@ public class MainActivity extends AppCompatActivity {
             Log.e("FILE", "Directory not created");
             dir.mkdir();
     }
+    //어플 권한 승인 여부 다이얼로그 출력.
     private void showPermissionDialog(){
         PermissionListener P_listener = new PermissionListener() {
             @Override
+            //권한 승인 시 권한허용 메시지 출력 후 디렉토리 생성
             public void onPermissionGranted() {
                 Toast.makeText(MainActivity.this,"저장공간 권한부여를 승인하셨습니다",Toast.LENGTH_LONG).show();
                 Create_Folder();
             }
-
+            //권한 미승인 시 권한 미허용 메시지 출력 후 앱 강제 종료
             @Override
             public void onPermissionDenied(ArrayList<String> deniedPermissions) {
                 Toast.makeText(MainActivity.this,"저장공간 권한부여를 거부하셨습니다",Toast.LENGTH_LONG).show();
